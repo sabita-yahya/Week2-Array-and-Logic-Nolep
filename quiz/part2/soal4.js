@@ -4,12 +4,12 @@ function pasanganTerbesar(num) {
 
     let arrNum = [];
     let strNum = String(num);
-    for (i = 0; i < strNum.length - 1; i++) {
+    for (let i = 0; i < strNum.length - 1; i++) {
         arrNum.push(parseInt(strNum[i]+strNum[i+1]));
     }
     let result = Math.max(...arrNum);
     return result;
-}
+} 
 
 // TEST CASES
 console.log(pasanganTerbesar(641573)); // 73

@@ -11,12 +11,7 @@ function palindrome(kata) {
   for (let i = kata.length - 1; i >= 0; i--) {
     reverse += kata[i];
   }
-  if (reverse === kata) {
-    return true;
-  } else {
-    return false;
-  }
-  return (kata = reverse);
+  return reverse === kata;
 }
 
 // TEST CASES

@@ -3,27 +3,29 @@
 // ```js
 let input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
 
-// method splice
 function dataHandling(input) {
-    input.splice(1,4, "Roman Alamsyah Elsharawy", "Provinsi Bandar Lampung", "21/05/1989", "Pria", "SMA Internasional Metro");
-    console.log(input);
-}
+
+// method splice 
+input.splice(1, 4, "Roman Alamsyah Elsharawy", "Provinsi Bandar Lampung", "21/05/1989", "Pria", "SMA Internasional Metro");
+console.log(input);
 
 // method split
-let arrayBulan = input[3].split("/");
-if (arrayBulan[1] === '05') {
+let bulan = input[3].split('/');
+if (bulan[1] === '05') {
     console.log("Mei");
 }
 
-console.log(`["${arrayBulan[2]}", "${arrayBulan[0]}", "${arrayBulan[1]}"]`);
+console.log(`["${bulan[2]}", "${bulan[0]}", "${bulan[1]}"]`);
 
 // method join
-let stringBulan = arrayBulan.join('-');
-console.log(stringBulan);
+let tanggal = bulan.join("-");
+console.log(tanggal);
 
 // method slice
-let name = input[1].slice(0, 15);
-console.log(name);
+let nama = input[1].slice(0, 15);
+console.log(nama);
+
+}
 
 dataHandling(input);
 
